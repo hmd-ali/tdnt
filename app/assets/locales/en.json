@@ -1,0 +1,10 @@
+{
+  "test": "test",
+  "form": {
+    "errors": {
+      "email": {
+        "required": "Email is required"
+      }
+    }
+  }
+}

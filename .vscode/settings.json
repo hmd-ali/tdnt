@@ -3,6 +3,10 @@
     "source.fixAll.eslint": "always"
   },
   "prettier.enable": false,
-  "i18n-ally.localesPaths": ["app/assets/locales"],
+  "i18n-ally.localesPaths": [
+    "app/assets/locales",
+    "i18n",
+    "i18n/locales"
+  ],
   "i18n-ally.keystyle": "nested"
 }

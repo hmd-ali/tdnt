@@ -12,6 +12,9 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vee-validate/nuxt",
     "@nuxtjs/i18n",
+    "@nuxtjs/color-mode",
+    "shadcn-nuxt",
+    "@pinia/nuxt",
   ],
 
   veeValidate: {
@@ -24,7 +27,6 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    langDir: "/app/assets/locales",
     lazy: true,
     strategy: "prefix_except_default",
     locales: [
@@ -34,6 +36,7 @@ export default defineNuxtConfig({
         file: "en.json",
         dir: "ltr",
         name: "English",
+        language: "en",
       },
       {
         code: "ar",
@@ -41,6 +44,7 @@ export default defineNuxtConfig({
         file: "ar.json",
         dir: "rtl",
         name: "العربية",
+        language: "ar",
       },
     ],
     defaultLocale: "en",
@@ -48,11 +52,27 @@ export default defineNuxtConfig({
     detectBrowserLanguage: {
       alwaysRedirect: true,
     },
+    experimental: {
+      localeDetector: "localeDetector.ts",
+    },
+    baseUrl: "http://localhost:3000",
   },
 
   runtimeConfig: {
     public: {
       apiUrl: "",
+    },
+  },
+  shadcn: {
+    componentDir: "./app/components/ui",
+    prefix: "Ui",
+  },
+
+  ssr: false,
+  devServer: {
+    https: {
+      cert: "./server.crt",
+      key: "./server.key",
     },
   },
 })

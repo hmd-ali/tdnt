@@ -1,0 +1,18 @@
+{
+  "form": {
+    "field_must_be_a_string": "{0} must be a string.",
+    "field_is_required": "{0} is required.",
+    "email": "Email",
+    "password": "Password",
+    "email_must_be_valid": "Must be a valid email",
+    "password_min_length": "Password must be at least 8 characters long"
+  },
+  "login": "Login",
+  "missing_token": "Token is missing or invalid.",
+  "logout": "Logout",
+  "enter_username_and_pass": "Enter your username and password",
+  "welcome_name": "Welcome, {name}!",
+  "invalid_username_or_password": "Invalid username or password",
+  "login_success": "Login success!",
+  "logged_in_route": "Logged in route"
+}

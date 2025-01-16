@@ -1,0 +1,18 @@
+{
+  "form": {
+    "email": "بريد إلكتروني",
+    "field_is_required": "{0} مطلوب.",
+    "field_must_be_a_string": "يجب أن يكون {0} سلسلة.",
+    "password": "كلمة المرور",
+    "email_must_be_valid": "يجب أن يكون بريدًا إلكترونيًا صالحًا",
+    "password_min_length": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل"
+  },
+  "login": "تسجيل الدخول",
+  "missing_token": "الرمز مفقود أو غير صالح.",
+  "logout": "تسجيل الخروج",
+  "welcome_name": "مرحبًا {name}!",
+  "enter_username_and_pass": "",
+  "login_success": "نجاح تسجيل الدخول!",
+  "invalid_username_or_password": "اسم المستخدم أو كلمة المرور غير صالحة",
+  "logged_in_route": "تم تسجيل الدخول في الطريق"
+}

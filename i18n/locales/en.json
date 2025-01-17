@@ -14,5 +14,6 @@
   "welcome_name": "Welcome, {name}!",
   "invalid_username_or_password": "Invalid username or password",
   "login_success": "Login success!",
-  "logged_in_route": "Logged in route"
+  "logged_in_route": "Logged in route",
+  "back_home": "Go back home"
 }

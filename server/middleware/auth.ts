@@ -1,8 +1,6 @@
 import { users } from "../data"
 
 export default defineEventHandler((event) => {
-  console.log(event.path)
-  console.log("token", event.headers.get("Authorization"))
   if (event.path.startsWith("/api/auth/login")) {
     return
   }

@@ -1,6 +1,6 @@
 export const users = [
   {
-    id: 1,
+    id: "1",
     name: "user 1",
     email: "user1@gmail.com",
     password:
@@ -8,7 +8,7 @@ export const users = [
     token: "token1",
   },
   {
-    id: 2,
+    id: "2",
     name: "user 2",
     email: "user2@gmail.com",
     password:

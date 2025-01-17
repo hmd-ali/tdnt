@@ -5,5 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div>{{ $t("logged_in_route") }}</div>
+  <div class="flex items-center justify-center py-20 text-2xl font-medium">
+    {{ $t("logged_in_route") }}
+  </div>
 </template>

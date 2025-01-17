@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from "nuxt/config"
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
@@ -8,10 +10,12 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    // "@nuxtjs/supabase",
+    "@nuxtjs/i18n",
+    "@nuxt/test-utils/module",
     "@nuxt/eslint",
     "@nuxtjs/tailwindcss",
     "@vee-validate/nuxt",
-    "@nuxtjs/i18n",
     "@nuxtjs/color-mode",
     "shadcn-nuxt",
     "@pinia/nuxt",
@@ -49,9 +53,9 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "en",
     defaultDirection: "ltr",
-    detectBrowserLanguage: {
-      alwaysRedirect: true,
-    },
+    // detectBrowserLanguage: {
+    //   alwaysRedirect: true,
+    // },
     experimental: {
       localeDetector: "localeDetector.ts",
     },
@@ -61,6 +65,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiUrl: "",
+      supabaseUrl: "",
+      supabaseKey: "",
+      supabase: {
+        url: process.env.SUPABASE_URL,
+        key: process.env.SUPABASE_KEY,
+      },
     },
   },
   shadcn: {
@@ -75,4 +85,15 @@ export default defineNuxtConfig({
       key: "./server.key",
     },
   },
+  // supabase: {
+  //   redirectOptions: {
+  //     login: "/login",
+  //     callback: "/confirm",
+  //     cookieRedirect: false,
+  //     include: ["**/login"],
+  //   },
+  //   redirect: false,
+  //   key: process.env.SUPABASE_KEY,
+  //   url: process.env.SUPABASE_URL,
+  // },
 })

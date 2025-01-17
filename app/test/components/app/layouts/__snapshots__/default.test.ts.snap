@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`layouts/default.vue > user is logged in the ar locale > it renders a logout 1`] = `
+"<div class="container mx-auto w-full pt-20">
+  <header class="fixed left-0 top-0 w-full">
+    <div class="container mx-auto flex h-20 w-full items-center justify-between border-b">
+      <div class="flex items-center gap-x-4">
+        <p class="text-muted-foreground">مرحبًا <span class="font-medium text-primary">John Doe</span>!</p><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 h-9 px-4 py-2" type="button">تسجيل الخروج</button>
+      </div>
+      <app-locale-switch-stub></app-locale-switch-stub>
+    </div>
+  </header>
+  <div></div>
+</div>"
+`;
+
+exports[`layouts/default.vue > user is logged in the en locale > it renders a logout 1`] = `
+"<div class="container mx-auto w-full pt-20">
+  <header class="fixed left-0 top-0 w-full">
+    <div class="container mx-auto flex h-20 w-full items-center justify-between border-b">
+      <div class="flex items-center gap-x-4">
+        <p class="text-muted-foreground">Welcome, <span class="font-medium text-primary">John Doe</span>!</p><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 h-9 px-4 py-2" type="button">Logout</button>
+      </div>
+      <app-locale-switch-stub></app-locale-switch-stub>
+    </div>
+  </header>
+  <div></div>
+</div>"
+`;

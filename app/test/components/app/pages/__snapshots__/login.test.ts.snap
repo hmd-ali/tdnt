@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`pages/login.vue > renders in the correct language for the ar locale 1`] = `
+"<div class="container mx-auto flex h-screen w-full max-w-xl items-center justify-center p-2">
+  <form class="w-full">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-sm relative p-2">
+      <div class="flex flex-col gap-y-1.5 p-6" as="h1">
+        <h3 class="text-2xl font-semibold leading-none tracking-tight">تسجيل الدخول</h3>
+        <p class="text-sm text-muted-foreground"></p>
+      </div>
+      <div class="p-6 pt-0 grid gap-4 lg:grid-cols-2">
+        <div class="space-y-2"><label for="radix-v-0-0-0-form-item" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 animate-spin">بريد إلكتروني</label><input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" autofocus="" autocomplete="username" name="email" type="text" id="radix-v-0-0-0-form-item" aria-describedby="radix-v-0-0-0-form-item-description" aria-invalid="false">
+          <!---->
+        </div>
+        <div class="space-y-2"><label for="radix-v-0-0-1-form-item" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">كلمة المرور</label><input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" name="password" type="password" autocomplete="current-password" id="radix-v-0-0-1-form-item" aria-describedby="radix-v-0-0-1-form-item-description" aria-invalid="false">
+          <!---->
+        </div>
+      </div>
+      <div class="flex items-center p-6 pt-0"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2" type="submit">تسجيل الدخول</button></div>
+      <!--v-if-->
+      <!--v-if-->
+      <div class="flex flex-col items-center">
+        <p class="mx-auto flex w-full items-center gap-x-2 px-6 before:h-px before:w-full before:bg-border after:h-px after:w-full after:bg-border"> or </p>
+        <p class="my-2 text-sm">Sign in with:</p><button class="mx-auto block" title="Github" type="button"><span class="sr-only">Github</span><svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" alt="GitHub">
+            <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+          </svg></button>
+      </div>
+    </div>
+  </form>
+</div>"
+`;
+
+exports[`pages/login.vue > renders in the correct language for the en locale 1`] = `
+"<div class="container mx-auto flex h-screen w-full max-w-xl items-center justify-center p-2">
+  <form class="w-full">
+    <div class="rounded-lg border bg-card text-card-foreground shadow-sm relative p-2">
+      <div class="flex flex-col gap-y-1.5 p-6" as="h1">
+        <h3 class="text-2xl font-semibold leading-none tracking-tight">Login</h3>
+        <p class="text-sm text-muted-foreground">Enter your username and password</p>
+      </div>
+      <div class="p-6 pt-0 grid gap-4 lg:grid-cols-2">
+        <div class="space-y-2"><label for="radix-v-0-0-0-form-item" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 animate-spin">Email</label><input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" autofocus="" autocomplete="username" name="email" type="text" id="radix-v-0-0-0-form-item" aria-describedby="radix-v-0-0-0-form-item-description" aria-invalid="false">
+          <!---->
+        </div>
+        <div class="space-y-2"><label for="radix-v-0-0-1-form-item" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Password</label><input class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" name="password" type="password" autocomplete="current-password" id="radix-v-0-0-1-form-item" aria-describedby="radix-v-0-0-1-form-item-description" aria-invalid="false">
+          <!---->
+        </div>
+      </div>
+      <div class="flex items-center p-6 pt-0"><button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2" type="submit">Login</button></div>
+      <!--v-if-->
+      <!--v-if-->
+      <div class="flex flex-col items-center">
+        <p class="mx-auto flex w-full items-center gap-x-2 px-6 before:h-px before:w-full before:bg-border after:h-px after:w-full after:bg-border"> or </p>
+        <p class="my-2 text-sm">Sign in with:</p><button class="mx-auto block" title="Github" type="button"><span class="sr-only">Github</span><svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" alt="GitHub">
+            <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+          </svg></button>
+      </div>
+    </div>
+  </form>
+</div>"
+`;

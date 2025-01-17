@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import type { LocaleObject } from "@nuxtjs/i18n"
+const localePath = useLocalePath()
 
 const userStore = useUserStore()
-const switchLocalePath = useSwitchLocalePath()
-const localePath = useLocalePath()
-const { locales: _locales, locale } = useI18n()
-const locales = computed(() => _locales.value as unknown as LocaleObject[])
 
-const handleLogout = () => {
+// const supabase = useSupabaseClient()
+const { $supabase } = useNuxtApp()
+const handleLogout = async () => {
   userStore.clearUser()
+  await $supabase.auth.signOut()
   return navigateTo(localePath("/login"))
 }
 </script>
@@ -21,7 +20,7 @@ const handleLogout = () => {
       >
         <div class="flex items-center gap-x-4">
           <template v-if="userStore.user !== undefined">
-            <i18n-t
+            <I18nT
               keypath="welcome_name"
               tag="p"
               scope="global"
@@ -32,27 +31,13 @@ const handleLogout = () => {
                   userStore.user.name
                 }}</span>
               </template>
-            </i18n-t>
-            <button class="text-destructive" @click="handleLogout">
+            </I18nT>
+            <UiButton type="button" variant="destructive" @click="handleLogout">
               {{ $t("logout") }}
-            </button>
+            </UiButton>
           </template>
         </div>
-        <nav class="flex items-center gap-x-4">
-          <NuxtLink
-            v-for="lang in locales"
-            :key="lang.code"
-            :to="switchLocalePath(lang.code)"
-            class="text-sm"
-            :class="{
-              'font-medium': lang.code === locale,
-              'text-muted-foreground': lang.code !== locale,
-            }"
-          >
-            <span class="md:hidden">{{ lang.code }}</span>
-            <span class="hidden md:inline">{{ lang.name }}</span>
-          </NuxtLink>
-        </nav>
+        <AppLocaleSwitch />
       </div>
     </header>
     <div>

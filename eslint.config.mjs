@@ -9,6 +9,8 @@ export default withNuxt(
   {
     rules: {
       "tailwindcss/no-custom-classname": "off",
+      "vue/require-default-prop": "off",
+      "no-empty": "off",
     },
   },
 )

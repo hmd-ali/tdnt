@@ -20,11 +20,57 @@ const handleLogout = async () => {
       >
         <div class="flex items-center gap-x-4">
           <template v-if="userStore.user !== undefined">
+            <UiSheet>
+              <UiSheetTrigger as-child>
+                <UiButton variant="ghost">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 12h16M4 6h16M4 18h16"
+                    />
+                  </svg>
+                </UiButton>
+              </UiSheetTrigger>
+              <UiSheetContent side="left">
+                <UiSheetHeader class="text-start">
+                  <UiSheetTitle>
+                    <I18nT
+                      keypath="welcome_name"
+                      tag="p"
+                      scope="global"
+                      class="text-muted-foreground"
+                    >
+                      <template #name>
+                        <span class="font-medium text-primary">{{
+                          userStore.user.name
+                        }}</span>
+                      </template>
+                    </I18nT>
+                  </UiSheetTitle>
+                </UiSheetHeader>
+                <UiButton
+                  type="button"
+                  variant="destructive"
+                  @click="handleLogout"
+                >
+                  {{ $t("logout") }}
+                </UiButton>
+              </UiSheetContent>
+            </UiSheet>
             <I18nT
               keypath="welcome_name"
               tag="p"
               scope="global"
-              class="text-muted-foreground"
+              class="hidden text-muted-foreground md:block"
             >
               <template #name>
                 <span class="font-medium text-primary">{{
@@ -32,7 +78,13 @@ const handleLogout = async () => {
                 }}</span>
               </template>
             </I18nT>
-            <UiButton type="button" variant="destructive" @click="handleLogout">
+
+            <UiButton
+              class="hidden md:block"
+              type="button"
+              variant="destructive"
+              @click="handleLogout"
+            >
               {{ $t("logout") }}
             </UiButton>
           </template>

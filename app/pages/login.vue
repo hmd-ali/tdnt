@@ -146,6 +146,7 @@ watch(tooManySubmissions, () => {
         </UiCardContent>
         <UiCardFooter>
           <UiButton
+            class="w-full lg:w-max"
             type="submit"
             :disabled="isSubmitting || tooManySubmissions"
           >

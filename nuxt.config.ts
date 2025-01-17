@@ -53,9 +53,10 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "en",
     defaultDirection: "ltr",
-    // detectBrowserLanguage: {
-    //   alwaysRedirect: true,
-    // },
+    detectBrowserLanguage: {
+      alwaysRedirect: true,
+      cookieKey: "i18n_redirected",
+    },
     experimental: {
       localeDetector: "localeDetector.ts",
     },

@@ -22,7 +22,7 @@ const handleLogout = async () => {
           <template v-if="userStore.user !== undefined">
             <UiSheet>
               <UiSheetTrigger as-child>
-                <UiButton variant="ghost">
+                <UiButton variant="ghost" class="md:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="32"

@@ -1,7 +1,7 @@
 export default defineNuxtPlugin(() => {
-  // const headers = useRequestHeaders()
+  const headers = useRequestHeaders()
   const api = $fetch.create({
-    // headers,
+    headers,
     onRequest: ({ options }) => {
       const token = sessionStorage.getItem("token")
       if (token !== null) {

@@ -46,8 +46,8 @@ const onSubmit = handleSubmit(
       toast.success(t("login_success"))
       await navigateTo($localePath("/"))
     } catch (_error: unknown) {
-      const error = _error as Error
-      toast.error(error.message)
+      const error = _error as { data: { statusMessage: string } }
+      toast.error(error.data.statusMessage)
     }
   },
   ({ errors }) => {
